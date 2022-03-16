@@ -12,10 +12,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          template: repository
           token: ${{ secrets.METRICS_TOKEN }}
-          user: solarft
-          repo: solarft
           config_timezone: Asia/Kuala_Lumpur
           plugin_lines: yes
           plugin_traffic: yes
