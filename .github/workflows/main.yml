@@ -12,9 +12,10 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          repo: metrics
           template: repository
           token: ${{ secrets.METRICS_TOKEN }}
+          user: lowlighter
+          repo: metrics
           config_timezone: Asia/Kuala_Lumpur
           plugin_lines: yes
           plugin_traffic: yes
@@ -25,3 +26,6 @@ jobs:
           plugin_activity_visibility: public
           plugin_languages: yes
           plugin_languages_sections: most-used
+          plugin_achievements: yes
+          plugin_achievements_secrets: yes
+          plugin_achievements_limit: 0
